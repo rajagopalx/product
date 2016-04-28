@@ -1,4 +1,4 @@
-#!/root/Documents/product/admin/dashboard/.venv/bin/python
+#!/root/Desktop/product/admin/dashboard/.venv/bin/python
 
 # Author: 
 # Contact: grubert@users.sf.net

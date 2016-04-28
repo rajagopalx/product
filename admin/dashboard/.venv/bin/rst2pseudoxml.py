@@ -1,4 +1,4 @@
-#!/root/Documents/product/admin/dashboard/.venv/bin/python
+#!/root/Desktop/product/admin/dashboard/.venv/bin/python
 
 # $Id: rst2pseudoxml.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>

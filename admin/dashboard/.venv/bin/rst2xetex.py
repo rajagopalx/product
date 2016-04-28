@@ -1,4 +1,4 @@
-#!/root/Documents/product/admin/dashboard/.venv/bin/python
+#!/root/Desktop/product/admin/dashboard/.venv/bin/python
 
 # $Id: rst2xetex.py 7038 2011-05-19 09:12:02Z milde $
 # Author: Guenter Milde
