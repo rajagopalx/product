@@ -1,36 +1,51 @@
 =============================
-Naanal Dashboard
+Horizon (OpenStack Dashboard)
 =============================
 
+Horizon is a Django-based project aimed at providing a complete OpenStack
+Dashboard along with an extensible framework for building new dashboards
+from reusable components. The ``openstack_dashboard`` module is a reference
+implementation of a Django site that uses the ``horizon`` app to provide
+web-based interactions with the various OpenStack projects.
 
-Prerequisites
-===============
+* Release management: https://launchpad.net/horizon
+* Blueprints and feature specifications: https://blueprints.launchpad.net/horizon
+* Issue tracking: https://bugs.launchpad.net/horizon
 
-* Ubuntu Machine
-* Local or Remote Openstack Environment
 
-Installing Naanal Dashboard
+Using Horizon
+=============
+
+See ``doc/source/topics/install.rst`` about how to install Horizon
+in your OpenStack setup. It describes the example steps and
+has pointers for more detailed settings and configurations.
+
+It is also available at http://docs.openstack.org/developer/horizon/topics/install.html.
+
+Getting Started for Developers
 ==============================
 
-* Clone the repo::
+``doc/source/quickstart.rst`` or
+http://docs.openstack.org/developer/horizon/quickstart.html
+describes how to setup Horizon development environment and start development.
 
-    $ git clone https://github.com/naanal/product.git
+Building Contributor Documentation
+==================================
 
-* Add Openstack Environment Endpoint to hosts
+This documentation is written by contributors, for contributors.
 
-    $ vim /etc/hosts
-    $ Add 'ip-address naanal-host' at the end of the file
-        Example: 192.168.30.125 naanal-host
+The source is maintained in the ``doc/source`` directory using
+`reStructuredText`_ and built by `Sphinx`_
 
-* Creating Virtual Environment::
+.. _reStructuredText: http://docutils.sourceforge.net/rst.html
+.. _Sphinx: http://sphinx-doc.org/
 
-    $ cd product/admin/dashboard/
-    $ ./run_tests.sh
+* Building Automatically::
 
+    $ ./run_tests.sh --docs
 
-* Run::
+* Building Manually::
 
-	$ ./runtest.sh --runserver 'local_ip_address/host_name:port_no'
+    $ tools/with_venv.sh sphinx-build doc/source doc/build/html
 
-	Example: $ ./runtest.sh --runserver 192.168.20.124:9000
-
+Results are in the ``doc/build/html`` directory
